@@ -1,4 +1,4 @@
-function printHelloWithButton() {
+window.addEventListener("load",function () {
   var btn = document.querySelector("input");
 
   function printHello() {
@@ -6,7 +6,7 @@ function printHelloWithButton() {
   }
 
   btn.addEventListener("click", printHello);
-}
+});
 
 
-window.addEventListener("load", printHelloWithButton);
+
