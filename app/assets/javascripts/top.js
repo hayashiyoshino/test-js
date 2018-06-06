@@ -1,8 +1,12 @@
-window.addEventListener("load", function() {
+function printHelloWithButton() {
   var btn = document.querySelector("input");
 
-  btn.addEventListener("click", function() {
-    var p = document.querySelector("p");
-    p.innerText = "クリックされた！";
-  });
-});
+  function printHello() {
+    console.log("Hello world");
+  }
+
+  btn.addEventListener("click", printHello);
+}
+
+
+window.addEventListener("load", printHelloWithButton);
